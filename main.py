@@ -1,4 +1,4 @@
-import uvicorn
+import gunicorn
 from fastapi import FastAPI
 
 from routers.mobility_seller import router
@@ -14,4 +14,4 @@ async def root():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, port=8000)
+    gunicorn.run(app, port=8000)
