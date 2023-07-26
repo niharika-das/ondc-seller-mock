@@ -1,2 +1,2 @@
 #web: gunicorn  main:app --reload
-web: uvicorn main:app --workers 4
+web: uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000}
