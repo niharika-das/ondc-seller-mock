@@ -1,1 +1,1 @@
-web: uvicorn --bind :$PORT main:app --reload
+web: uvicorn --port :$PORT main:app --reload
