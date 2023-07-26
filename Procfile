@@ -1,1 +1,2 @@
-web: gunicorn uvicorn.workers.UvicornH11Worker main:app --reload
+#web: gunicorn  main:app --reload
+web: uvicorn main:app --workers 4
