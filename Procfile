@@ -1,1 +1,1 @@
-web: uvicorn main:app --reload
+web: gunicorn --bind 0.0.0.0:$PORT main:app --reload
